@@ -419,6 +419,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     const emailUnderline = copyBtn.querySelector('.email-underline');
                     
                     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                        copyBtn.classList.remove('email-attention');
+                        void copyBtn.offsetWidth;
+                        copyBtn.classList.add('email-attention');
+                        
                         if (emailGroup) {
                             emailGroup.classList.remove('email-attention');
                             void emailGroup.offsetWidth;
@@ -431,12 +435,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                         
                         setTimeout(() => {
+                            copyBtn.classList.remove('email-attention');
                             if (emailGroup) emailGroup.classList.remove('email-attention');
                             if (emailUnderline) {
                                 emailUnderline.classList.remove('email-attention');
                                 emailUnderline.classList.add('has-grown');
                             }
-                        }, 700);
+                        }, 1500);
                     } else {
                         if (emailUnderline) emailUnderline.classList.add('has-grown');
                     }
@@ -553,10 +558,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const backToTopBtn = document.getElementById('back-to-top');
     if (backToTopBtn) {
         const checkScroll = () => {
-            const hero = document.getElementById('hero');
-            if (!hero) return;
-            const heroHeight = hero.offsetHeight;
-            if (window.scrollY > heroHeight * 0.3) {
+            if (window.scrollY > 300) {
                 backToTopBtn.classList.add('is-visible');
             } else {
                 backToTopBtn.classList.remove('is-visible');
@@ -579,12 +581,20 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initial check
         checkScroll();
 
-        backToTopBtn.addEventListener('click', () => {
+        const scrollToTop = () => {
             const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             window.scrollTo({
                 top: 0,
                 behavior: prefersReducedMotion ? 'auto' : 'smooth'
             });
+        };
+
+        backToTopBtn.addEventListener('click', scrollToTop);
+        backToTopBtn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                scrollToTop();
+            }
         });
     }
 
