@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEA LAB | LEE JIYEON</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=Manrope:wght@500&family=Noto+Sans+KR:wght@300;400;500;700&family=Odibee+Sans&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- JS Init -->
+    <script>
+        document.documentElement.classList.add('js');
+        // Hide default cursor early if possible
+        if (window.matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine)").matches) {
+            document.documentElement.classList.add('custom-cursor-ready');
+        }
+    </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="idea-lab-theme" data-cursor-theme="light">
+    
+    <!-- Main Custom Cursor -->
+    <div id="main-cursor-container" data-theme="light">
+        <div class="mc-dot"></div>
+        <div class="mc-corner top-left"></div>
+        <div class="mc-corner top-right"></div>
+        <div class="mc-corner bottom-left"></div>
+        <div class="mc-corner bottom-right"></div>
+    </div>
+
+    <!-- Project View Cursor -->
+    <div class="custom-cursor" id="custom-cursor">
+        <span class="cursor-text">VIEW PROJECT</span>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="brand-logo">LEE JIYEON <span class="coord-label">[37.5665° N, 126.9780° E]</span></a>
+            <button class="mobile-nav-toggle" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main data-scroll-container>
+        
+        <!-- SECTION 00: HERO -->
+        <section class="section section-hero" id="home" data-cursor-theme="default">
+            <!-- Grid Background -->
+            <div class="common-grid-bg"></div>
+            
+            <!-- Orbit Graphic -->
+            <div class="hero-orbit-wrapper">
+                <div class="orbit-circle orbit-outer">
+                    <div class="orbit-dot dot-1"></div>
+                    <div class="orbit-dot dot-2"></div>
+                    <div class="orbit-keyword k-idea">IDEA</div>
+                    <div class="orbit-keyword k-design">DESIGN</div>
+                    <div class="orbit-keyword k-build">BUILD</div>
+                </div>
+                <div class="orbit-circle orbit-inner">
+                    <div class="orbit-inner-dot"></div>
+                </div>
+                <div class="orbit-crosshair"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="section-label">00 — INDEX</div>
+                    <h1 class="hero-title">
+                        <div class="title-line reveal-text"><span class="word-designing">DESIGNING</span><span class="word-ideas">IDEAS</span></div>
+                        <div class="title-line reveal-text indent"><span class="word-into">INTO</span> <span class="word-real">REAL</span></div>
+                        <div class="title-line reveal-text indent-more text-blue"><span class="word-experiences">EXPERIENCES.</span></div>
+                    </h1>
+                </div>
+                
+                <div class="hero-bottom-bar">
+                    <div class="hero-info-block">
+                        <span class="info-label">DESIGNER</span>
+                        <span class="info-value">LEE JIYEON</span>
+                    </div>
+                    <div class="hero-info-block">
+                        <span class="info-label">ROLE</span>
+                        <span class="info-value">UI/UX & WEB DESIGNER</span>
+                    </div>
+                    <div class="hero-info-block hide-mobile">
+                        <span class="info-label">ARCHIVE</span>
+                        <span class="info-value">2026 PORTFOLIO</span>
+                    </div>
+                    <div class="hero-info-block hide-mobile">
+                        <span class="info-label">LOCATION</span>
+                        <span class="info-value">BASED IN KOREA</span>
+                    </div>
+                    <div class="hero-scroll-prompt">
+                        <span class="scroll-text">SCROLL TO EXPLORE</span>
+                        <div class="scroll-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 01: ABOUT -->
+        <section class="section section-about" id="about">
+            <div class="container about-container">
+                <div class="about-sidebar">
+                    <div class="vertical-label">01 / ABOUT ME</div>
+                </div>
+                <div class="about-main">
+                    <h2 class="about-core-text reveal-clip">
+                        <span class="text-blue">문제</span>를 발견하고,<br>
+                        <span class="text-blue">경험</span>을 설계하며,<br>
+                        아이디어를 <span class="text-blue">작동하는 화면</span>으로 구현합니다.
+                    </h2>
+                    
+                    <p class="about-sub-text reveal-clip">
+                        사용자 관점의 기획과 일관된 UI, 빠른 프로토타이핑을 바탕으로<br>
+                        디자인이 실제 경험이 되는 순간까지 만듭니다.
+                    </p>
+                    
+                    <div class="about-meta-bar">
+                        <div class="meta-item reveal-clip">
+                            <div class="meta-content">
+                                <span class="meta-label">FOCUS</span>
+                                <span class="meta-value">UX/UI · WEB · INTERACTION</span>
+                            </div>
+                        </div>
+                        <div class="meta-item reveal-clip">
+                            <div class="meta-content">
+                                <span class="meta-label">APPROACH</span>
+                                <span class="meta-value">RESEARCH · DESIGN · BUILD</span>
+                            </div>
+                        </div>
+                        <div class="meta-item reveal-clip">
+                            <div class="meta-content">
+                                <span class="meta-label">WORKFLOW</span>
+                                <span class="meta-value">FIGMA · CODE · AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Process Graphic -->
+                    <div class="process-graphic animate-process">
+                        <div class="process-line-base"></div>
+                        <div class="process-line-progress"></div>
+                        
+                        <div class="process-step step-1">
+                            <div class="step-node"></div>
+                            <div class="step-content">
+                                <div class="step-num">01</div>
+                                <div class="step-title">DISCOVER</div>
+                                <div class="step-desc">사용자와 문제를 관찰하고<br>핵심 과제를 발견합니다.</div>
+                            </div>
+                        </div>
+                        <div class="process-step step-2">
+                            <div class="step-node"></div>
+                            <div class="step-content">
+                                <div class="step-num">02</div>
+                                <div class="step-title">DESIGN</div>
+                                <div class="step-desc">정보와 흐름을 정리해<br>일관된 경험을 설계합니다.</div>
+                            </div>
+                        </div>
+                        <div class="process-step step-3">
+                            <div class="step-node"></div>
+                            <div class="step-content">
+                                <div class="step-num">03</div>
+                                <div class="step-title">BUILD</div>
+                                <div class="step-desc">프로토타입과 코드로 아이디어를<br>실제 화면에 구현합니다.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marquee -->
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <div class="marquee-content">UX/UI DESIGN <span class="dot">·</span> WEB DESIGN <span class="dot">·</span> INTERACTION <span class="dot">·</span> AI CREATIVE <span class="dot">·</span> </div>
+                    <div class="marquee-content">UX/UI DESIGN <span class="dot">·</span> WEB DESIGN <span class="dot">·</span> INTERACTION <span class="dot">·</span> AI CREATIVE <span class="dot">·</span> </div>
+                    <div class="marquee-content">UX/UI DESIGN <span class="dot">·</span> WEB DESIGN <span class="dot">·</span> INTERACTION <span class="dot">·</span> AI CREATIVE <span class="dot">·</span> </div>
+                    <div class="marquee-content">UX/UI DESIGN <span class="dot">·</span> WEB DESIGN <span class="dot">·</span> INTERACTION <span class="dot">·</span> AI CREATIVE <span class="dot">·</span> </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 02: PROJECTS -->
+        <section class="section section-projects" id="projects">
+            
+            <div class="container projects-intro">
+                <div class="intro-sidebar">
+                    <div class="vertical-label">02 / SELECTED WORKS</div>
+                </div>
+                <div class="intro-main reveal-clip">
+                    <h2 class="intro-title">SELECTED WORKS</h2>
+                    <p class="intro-desc">아이디어를 현실로 구현한 3개의 주요 프로젝트를 소개합니다.</p>
+                </div>
+            </div>
+
+            <!-- Project 01: Mallang -->
+            <article class="project-showcase p-mallang" data-cursor-theme="mallang">
+                <div class="project-transition reveal-clip">MALLANG LIFE<br>ASSISTANT</div>
+                <div class="mallang-bg-split">
+                    <div class="bg-yellow"></div>
+                    <div class="bg-blue"></div>
+                    <div class="orbit-bg-element"></div>
+                </div>
+                <div class="container project-container">
+                    <div class="project-info reveal-clip">
+                        <div class="p-number">01</div>
+                        <h3 class="p-title-en">MALLANG LIFE<br>ASSISTANT</h3>
+                        <div class="p-title-kr">말랑말랑 자취비서</div>
+                        <div class="p-category">UX/UI DESIGN · APP · WEB DEVELOPMENT</div>
+                        <p class="p-desc">
+                            1인 가구의 복잡한 생활비 관리를 쉽고 친근하게 돕는 생활비 관리 서비스입니다. 예산, 지출 기록, 비상금 챌린지와 통계를 하나의 흐름으로 연결했습니다.
+                        </p>
+                        <div class="p-tech">
+                            <span class="tech-label">TECH</span> Figma · React · TypeScript · Firebase
+                        </div>
+                        <div class="m-links reveal-clip">
+                            <a href="https://sjian110-art.github.io/jachwi-assistant/" target="_blank" rel="noopener noreferrer" class="m-link">CASE STUDY ↗</a>
+                            <a href="https://app.notion.com/p/Project-1-73be67e45338833cb96d01270273eeb6" target="_blank" rel="noopener noreferrer" class="m-link">PROJECT PLAN ↗</a>
+                            <a href="https://secretary-sigma-rust.vercel.app/" target="_blank" rel="noopener noreferrer" class="m-link">LIVE APP ↗</a>
+                            <a href="https://www.figma.com/design/GbGxEjEyzHx8f7c432qc8W/%EB%A7%90%EB%9E%91%EB%A7%90%EB%9E%91-%EC%9E%90%EC%B7%A8%EB%B9%84%EC%84%9C?node-id=0-1&t=IbHDlgs4cWrCGTiT-1" target="_blank" rel="noopener noreferrer" class="m-link">FIGMA ↗</a>
+                        </div>
+                    </div>
+                    <div class="project-visual mallang-visual" data-cursor-color="mallang">
+                        <div class="visual-coord-line x-line"></div>
+                        <div class="visual-coord-line y-line"></div>
+                        <div class="visual-caption">FIG. 01 — MALLANG APP SCREENS</div>
+                        <a href="https://secretary-sigma-rust.vercel.app/" target="_blank" rel="noopener noreferrer" class="m-view-project-btn">VIEW PROJECT</a>
+                        
+                        <div class="mallang-stack">
+                            <div class="m-phone-wrapper m-budget reveal-clip" data-screen="03">
+                                <img src="./assets/jachwi/jachwi-budget-mockup.png" alt="Budget Screen" class="m-phone">
+                                <div class="m-tag-container">
+                                    <div class="m-thread"></div>
+                                    <button class="m-tag" aria-label="View Screen 03">VIEW SCREEN 03 ↗</button>
+                                </div>
+                            </div>
+                            <div class="m-phone-wrapper m-challenge reveal-clip" data-screen="02">
+                                <img src="./assets/jachwi/jachwi-challenge-mockup.png" alt="Challenge Screen" class="m-phone">
+                                <div class="m-tag-container">
+                                    <div class="m-thread"></div>
+                                    <button class="m-tag" aria-label="View Screen 02">VIEW SCREEN 02 ↗</button>
+                                </div>
+                            </div>
+                            <div class="m-phone-wrapper m-expense reveal-clip" data-screen="04">
+                                <img src="./assets/jachwi/jachwi-expense-mockup.png" alt="Expense Screen" class="m-phone">
+                                <div class="m-tag-container">
+                                    <div class="m-thread"></div>
+                                    <button class="m-tag" aria-label="View Screen 04">VIEW SCREEN 04 ↗</button>
+                                </div>
+                            </div>
+                            <div class="m-phone-wrapper m-splash reveal-clip" data-screen="01">
+                                <img src="./assets/jachwi/jachwi-splash-mockup.png" alt="Splash Screen" class="m-phone">
+                                <div class="m-tag-container">
+                                    <div class="m-thread"></div>
+                                    <button class="m-tag" aria-label="View Screen 01">VIEW SCREEN 01 ↗</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 02: Diptyque -->
+            <article id="project-diptyque" class="project-showcase p-diptyque" data-cursor-theme="diptyque">
+                <div class="project-transition dark reveal-clip">DIPTYQUE</div>
+                <div class="container project-container reverse">
+                    <div class="project-info reveal-clip">
+                        <div class="p-number">02</div>
+                        <h3 class="p-title-en">DIPTYQUE<br>E-COMMERCE<br><span class="text-deepred">& EDITORIAL</span></h3>
+                        <div class="p-title-kr">딥티크 이커머스 & 에디토리얼 랜딩</div>
+                        <div class="p-category">WEB DESIGN · E-COMMERCE · INTERACTION</div>
+                        <p class="p-desc">
+                            딥티크의 클래식하고 감각적인 브랜드 이미지를 디지털 환경에 맞게 재해석한 이커머스 및 에디토리얼 랜딩페이지입니다.
+                        </p>
+                        <div class="p-tech">
+                            <span class="tech-label">TECH</span> Figma · React · JavaScript · Vercel
+                        </div>
+                        <div class="d-links">
+                            <a href="https://app.notion.com/p/Project-2-84de67e4533883e1916a81afcb1c0749" target="_blank" rel="noopener noreferrer" class="d-link">PROJECT PLAN ↗</a>
+                            <a href="https://diptyque-editorial-landing.vercel.app/" target="_blank" rel="noopener noreferrer" class="d-link">LANDING ↗</a>
+                            <a href="https://diptyque-shop.vercel.app/" target="_blank" rel="noopener noreferrer" class="d-link">SHOP ↗</a>
+                        </div>
+                    </div>
+                    <div class="project-visual diptyque-visual">
+                        <div class="d-main-wrapper reveal-clip project-link-trigger" data-link="https://diptyque-editorial-landing.vercel.app/" data-cursor-color="diptyque">
+                            <span class="frame-label" data-diptyque-main-label>FRAME NO. 01 — LANDING</span>
+                            <img src="./assets/diptyque/diptyque-landing-01.jpg" alt="Diptyque landing main screen" class="d-img-main" data-diptyque-main data-frame="01" data-title="LANDING">
+                        </div>
+                        
+                        <div class="d-sub-gallery-notice">
+                            <span class="notice-left">SELECT A FRAME</span>
+                            <span class="notice-right"><span class="arrow" style="font-size: 1.2em; display: inline-block;">↓</span> CLICK TO PREVIEW</span>
+                        </div>
+                        
+                        <div class="d-sub-gallery">
+                            <div class="d-sub-wrapper reveal-clip" data-diptyque-thumbnail tabindex="0" role="button" aria-label="Select Frame 02" data-cursor-theme="diptyque-thumb">
+                                <img src="./assets/diptyque/diptyque-landing-02.jpg" alt="Diptyque scent finder screen" class="d-img-sub" data-frame="02" data-title="SCENT FINDER">
+                                <span class="frame-label-sub" data-diptyque-sub-label>NO. 02</span>
+                            </div>
+                            <div class="d-sub-wrapper reveal-clip" data-diptyque-thumbnail tabindex="0" role="button" aria-label="Select Frame 03" data-cursor-theme="diptyque-thumb">
+                                <img src="./assets/diptyque/diptyque-gate-interaction.jpg" alt="Diptyque gate interaction screen" class="d-img-sub" data-frame="03" data-title="GATE INTERACTION">
+                                <span class="frame-label-sub" data-diptyque-sub-label>NO. 03</span>
+                            </div>
+                            <div class="d-sub-wrapper reveal-clip" data-diptyque-thumbnail tabindex="0" role="button" aria-label="Select Frame 04" data-cursor-theme="diptyque-thumb">
+                                <img src="./assets/diptyque/diptyque-scent-result.jpg" alt="Diptyque scent result screen" class="d-img-sub" data-frame="04" data-title="SCENT RESULT">
+                                <span class="frame-label-sub" data-diptyque-sub-label>NO. 04</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 03: KAERI -->
+            <article id="project-kaeri" class="project-showcase p-kaeri" data-cursor-theme="dark">
+                <div class="project-transition reveal-clip">KAERI</div>
+                <div class="kaeri-grid-bg"></div>
+                <div class="container project-container">
+                    <div class="project-info reveal-clip">
+                        <div class="p-number">03</div>
+                        <h3 class="p-title-en">KAERI WEBSITE<br><span class="text-electric">RENEWAL</span></h3>
+                        <div class="p-title-kr">한국원자력연구원 웹사이트 리뉴얼</div>
+                        <div class="p-category">WEB RENEWAL · INTERACTIVE WEB · ADAPTIVE DESIGN</div>
+                        <p class="p-desc">
+                            한국원자력연구원의 연구 성과를 쉽고 인상적으로 전달하기 위해 스크롤 기반의 전시형 웹사이트로 재구성한 프로젝트입니다.
+                        </p>
+                        <div class="p-tech">
+                            <span class="tech-label">TECH</span> Figma · HTML · CSS · JavaScript · GSAP
+                        </div>
+                        <div class="k-links reveal-clip">
+                            <a href="https://app.notion.com/p/Project-3-dcae67e4533883c6bac5810f7a7a5665" target="_blank" rel="noopener noreferrer" class="k-link">PROJECT PLAN ↗</a>
+                            <a href="https://sjian110-art.github.io/renewal-structure-fixed/" target="_blank" rel="noopener noreferrer" class="k-link">WEBSITE ↗</a>
+                        </div>
+                    </div>
+                    <div class="project-visual kaeri-visual reveal-clip">
+                        <div class="kaeri-orbit-ring"></div>
+                        <div class="data-panel-wrapper">
+                            <div class="data-main project-link-trigger" data-link="https://sjian110-art.github.io/renewal-structure-fixed/" style="cursor: pointer;">
+                                <div class="panel-header">SYS.MAIN_VIEW <span class="blink">_</span></div>
+                                <img src="./assets/kaeri/kaeri-cover-01.jpg" alt="KAERI Main" id="kaeri-main-img" style="transition: opacity 0.4s ease;">
+                            </div>
+                                <div class="data-thumb-notice">
+                                    <span class="notice-left">SELECT A FRAME</span>
+                                    <span class="notice-right"><span class="arrow" style="font-size: 1.2em; display: inline-block;">↓</span> CLICK TO PREVIEW</span>
+                                </div>
+                                <div class="data-thumbnails">
+                                <button type="button" class="data-thumb" data-cursor-theme="kaeri-thumb"><img src="./assets/kaeri/kaeri-cover-02.jpg" alt="KAERI Sub 1"></button>
+                                <button type="button" class="data-thumb" data-cursor-theme="kaeri-thumb"><img src="./assets/kaeri/kaeri-cover-03.jpg" alt="KAERI Sub 2"></button>
+                                <button type="button" class="data-thumb" data-cursor-theme="kaeri-thumb"><img src="./assets/kaeri/kaeri-cover-04.jpg" alt="KAERI Sub 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- KAERI to Skills Mask Transition -->
+        <div id="skills-transition" class="skills-transition-wrapper">
+            <div class="st-sticky">
+                <div class="st-bg-image">
+                    <div class="st-text-container">
+                        <div class="st-text-label">FROM PROJECTS TO CAPABILITIES</div>
+                        <div class="st-text-main">
+                            <div class="st-main-line1">BEHIND THE WORK</div>
+                            <div class="st-main-line2">ARE THE SKILLS.</div>
+                        </div>
+                        <div class="st-text-keywords">PLANNING · DESIGN · DEVELOPMENT · AI</div>
+                    </div>
+                </div>
+                <div class="st-mask-bg">
+                    <div class="st-grid-lines"></div>
+                </div>
+                <div class="st-mask-frame" id="st-mask-frame">
+                    <div class="st-corner top-left"></div>
+                    <div class="st-corner top-right"></div>
+                    <div class="st-corner bottom-left"></div>
+                    <div class="st-corner bottom-right"></div>
+                    <div class="st-crosshair"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 03: SKILLS -->
+        <section class="section section-skills" id="skills" data-cursor-theme="blue">
+            <div class="container skills-container">
+                <h2 class="skills-huge-title reveal-clip">SKILLS & TOOLS</h2>
+                <div class="skills-sub-title reveal-clip">SELF-ASSESSMENT BASED ON PROJECT EXPERIENCE</div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category reveal-clip">
+                        <div class="skill-header">
+                            <div class="skill-title-wrapper">
+                                <div class="skill-num">01</div>
+                                <h3 class="skill-name">PLANNING</h3>
+                            </div>
+                            <div class="skill-percent"><span class="count-up" data-target="85">0</span><span class="percent-symbol">%</span></div>
+                        </div>
+                        <p class="skill-desc">문제 정의와 핵심 목표를 설정하고 기획서로 정리합니다.</p>
+                        <ul class="skill-list">
+                            <li>UX Research</li>
+                            <li>User Flow</li>
+                            <li>Information Architecture</li>
+                        </ul>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category reveal-clip delay-1">
+                        <div class="skill-header">
+                            <div class="skill-title-wrapper">
+                                <div class="skill-num">02</div>
+                                <h3 class="skill-name">DESIGN<span class="core-strength">CORE STRENGTH</span></h3>
+                            </div>
+                            <div class="skill-percent"><span class="count-up" data-target="90">0</span><span class="percent-symbol">%</span></div>
+                        </div>
+                        <p class="skill-desc">일관된 UI와 실제 사용 가능한 프로토타입을 설계합니다.</p>
+                        <ul class="skill-list">
+                            <li>Figma</li>
+                            <li>UI Design</li>
+                            <li>Prototyping</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category reveal-clip">
+                        <div class="skill-header">
+                            <div class="skill-title-wrapper">
+                                <div class="skill-num">03</div>
+                                <h3 class="skill-name">DEVELOPMENT</h3>
+                            </div>
+                            <div class="skill-percent"><span class="count-up" data-target="78">0</span><span class="percent-symbol">%</span></div>
+                        </div>
+                        <p class="skill-desc">디자인을 반응형 웹과 인터랙션으로 직접 구현합니다.</p>
+                        <ul class="skill-list">
+                            <li>HTML / CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                        </ul>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="78"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category reveal-clip delay-1">
+                        <div class="skill-header">
+                            <div class="skill-title-wrapper">
+                                <div class="skill-num">04</div>
+                                <h3 class="skill-name">AI TOOLS<span class="core-strength">CORE STRENGTH</span></h3>
+                            </div>
+                            <div class="skill-percent"><span class="count-up" data-target="92">0</span><span class="percent-symbol">%</span></div>
+                        </div>
+                        <p class="skill-desc">AI를 기획과 제작 과정에 연결해 구현 속도를 높입니다.</p>
+                        <ul class="skill-list">
+                            <li>ChatGPT</li>
+                            <li>Claude</li>
+                            <li>Gemini</li>
+                            <li>AntiGravity</li>
+                        </ul>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-percent="92"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 03-B: CHANNELS -->
+        <section class="section section-channels" id="channels" data-cursor-theme="blue">
+            <div class="common-grid-bg"></div>
+            <div class="container channels-container">
+                <div class="vertical-label">03-B / EXPLORE MORE</div>
+                <div class="channels-content reveal-clip">
+                    <h2 class="channels-title">
+                        EXPLORE <em>MORE</em><br>
+                        <span class="channels-subtitle">CONTINUE THROUGH MY CHANNELS</span>
+                    </h2>
+                    
+                    <div id="channel-cards-container" class="channel-cards">
+                        <!-- Rendered by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 04: CONTACT & FOOTER -->
+        <section class="section section-contact" id="contact" data-cursor-theme="dark">
+            <div class="container contact-container">
+                <div class="vertical-label">04 / ARCHIVE END</div>
+                
+                <div class="contact-content reveal-clip">
+                    <h2 class="contact-title">
+                        LET’S <span class="contact-highlight">CREATE</span><br>
+                        SOMETHING TOGETHER.
+                    </h2>
+                    <p class="contact-desc">새로운 아이디어와 협업의 기회를 기다리고 있습니다.</p>
+                    
+                    <div class="email-cta" id="copy-email-btn" role="button" tabindex="0" title="이메일 주소 복사" aria-label="이메일 주소 복사">
+                        <div class="email-content-wrapper">
+                            <div class="email-text-group">
+                                <span class="email-text">lars00@naver.com</span>
+                                <span class="email-copy-label">
+                                    <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    CLICK TO COPY
+                                </span>
+                            </div>
+                            <div class="email-underline"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Toast Notification -->
+                    <div id="copy-toast" class="copy-toast" aria-live="polite">
+                        <svg class="toast-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFE45C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span class="toast-text">이메일 주소가 복사되었습니다.</span>
+                    </div>
+                </div>
+
+                <!-- Footer Integration -->
+                <footer class="footer reveal-clip">
+                    <div class="footer-left">
+                        <div class="status-indicator">
+                            <span class="status-dot"></span> AVAILABLE FOR WORK / 2026
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-credits">Designed & Developed by LEE JIYEON</div>
+                        <div class="footer-copyright">&copy; 2026 LEE JIYEON. All rights reserved.</div>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="페이지 최상단으로 이동">
+        <div class="btt-grid-h"></div>
+        <div class="btt-grid-v"></div>
+        <div class="btt-corner top-left"></div>
+        <div class="btt-corner top-right"></div>
+        <div class="btt-corner bottom-left"></div>
+        <div class="btt-corner bottom-right"></div>
+        <div class="btt-content">
+            <span class="btt-arrow">↑</span>
+            <span class="btt-text">TOP</span>
+        </div>
+    </button>
+
+    <!-- Mallang Modal (Lightbox) -->
+    <div id="mallang-modal" class="m-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mallang Screen Preview">
+        <div class="m-modal-overlay"></div>
+        
+        <div class="m-modal-header">
+            <div class="m-modal-counter">01 / 04</div>
+            <button class="m-modal-close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <div class="m-modal-content">
+            <button class="m-modal-nav prev" aria-label="Previous screen">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <img src="" alt="Screen Preview" class="m-modal-img">
+            <button class="m-modal-nav next" aria-label="Next screen">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
